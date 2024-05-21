@@ -1,0 +1,265 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>My Portfolio</title> 
+	<link rel="stylesheet"
+		href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity= 
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="responsive.css"> 
+</head> 
+
+<body> 
+	<!-- Navbar header section -->
+	<header class="header"> 
+		<nav class="navbar"> 
+			<div class="logo"> 
+				<h2 class="logo-heading">Vishwash Tiwari</h2> 
+			</div> 
+			<div class="hamburger" id="hamburger"> 
+				<i class="fas fa-bars hamburger-icon"></i> 
+				<i class="fas fa-times cross-icon"></i> 
+			</div> 
+			<div class="menu"> 
+				<ul class="menu-list"> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#home"> 
+							Home 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#Education"> 
+							Education 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#about"> 
+							About 
+						</a> 
+					</li>  
+					<li class="menu-list-items"> 
+						<a class="links" href="#contact"> 
+							Contact Me 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#Projects"> 
+							Projects 
+						</a> 
+					</li> 
+				</ul> 
+			</div> 
+		</nav> 
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const hamburger = document.querySelector('.hamburger');
+				const menu = document.querySelector('.menu');
+				const crossIcon = document.querySelector('.cross-icon');
+			
+				hamburger.addEventListener('click', function() {
+					menu.classList.toggle('active');
+					hamburger.style.display = 'none';
+					crossIcon.style.display = 'block';
+				});
+			
+				crossIcon.addEventListener('click', function() {
+					menu.classList.toggle('active');
+					hamburger.style.display = 'block';
+					crossIcon.style.display = 'none';
+				});
+			});
+			</script>
+	</header> 
+
+	<!-- Main hero banner -->
+	<section id="home" class="hero"> 
+		<div class="intro"> 
+			<div class="headings"> 
+				<h3 class="greet-heading">Hello, I'm</h3> 
+				<h1 class="my-heading">Vishwash Tiwari</h1> 
+				<h4 class="sub-heading"> 
+					A Software Engineer . 
+				</h4> 
+			</div> 
+			<div class="intro-buttons"> 
+				<a href="https://drive.google.com/file/d/1pF9SCSkoqtNlbNv_9-qeExCCjlJSfgVr/view?usp=sharing" target="_blank" class="btn common-btn">Hire Me</a>
+				<a href="https://drive.google.com/file/d/1pF9SCSkoqtNlbNv_9-qeExCCjlJSfgVr/view?usp=sharing" target="_blank" class="btn ghost-btn">Get Resume</a>
+			</div>
+		</div> 
+	</section> 
+
+	<section class="skills" id="skills">
+		<div class="skills">
+			<div class="container">
+				<h2 class="section-title">Skills & Proficiencies</h2>
+				
+				<div class="skill">
+					<div class="skill-name">HTML/CSS</div>
+					<div class="skill-bar">
+						<div class="skill-level" style="width: 70%;"></div>
+					</div>
+					<div class="skill-description">70%</div>
+				</div>
+				
+				<div class="skill">
+					<div class="skill-name">C++</div>
+					<div class="skill-bar">
+						<div class="skill-level" style="width: 80%;"></div>
+					</div>
+					<div class="skill-description">80%</div>
+				</div>
+				
+				<div class="skill">
+					<div class="skill-name">My SQL</div>
+					<div class="skill-bar">
+						<div class="skill-level" style="width: 80%;"></div>
+					</div>
+					<div class="skill-description">80%</div>
+				</div>
+				
+				<div class="skill">
+					<div class="skill-name">React Native</div>
+					<div class="skill-bar">
+						<div class="skill-level" style="width: 50%;"></div>
+					</div>
+					<div class="skill-description">50%</div>
+				</div>
+				
+				<div class="skill">
+					<div class="skill-name">SEO (Search Engine Optimization)</div>
+					<div class="skill-bar">
+						<div class="skill-level" style="width: 60%;"></div>
+					</div>
+					<div class="skill-description">60%</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</section>
+	<section id="Education" class="Education"> 
+	<div class="education-section">
+		<h2>Education</h2>
+		<div class="education-item">
+			<h3>HSC (Higher Secondary Certificate)</h3>
+			<p>Mother Marry J.r College Bhayandar Maharastra, 2020 - 2021</p>
+			<p>Percentage- 80%</p>
+		</div>
+		<div class="education-item">
+			<h3>Bachelor of Science in Information Technology</h3>
+			<p>Thakur College of Science and Commerce Kandivali East, 2016 - 2020</p>
+			<p>CGPA: 7.5/10.0</p>
+		</div>
+	</div>
+</section> 
+<!-- About Section -->
+	<section id="about" class="about"> 
+		<div class="about-text"> 
+			<h1 class="my-heading">About Me</h1> 
+			<p class="lead-para"> 
+				"Hi, I'm Vishwash Tiwari. I recently graduated from Thakur College Of Science and Commerce.
+				 I'm originally from Varanasi, Uttar Pradesh.
+				  I'm passionate about learning new things in the field of technology. 
+				  My goal is to become a software developer specializing in C++. I've completed several courses on C++ from Google.
+			</p> 
+			<p> 
+				I also did an internship with Python at Filament Ai,
+				 where I worked as a data engineer.
+				  My main task was to train data and create models for various objects as per the developer's 
+				  requirements. One of the projects I worked on was for BOMBEY PHARAMA, where I trained and tested data on
+				   real-world objects. Thank you!"
+			</p> 
+		</div>
+		<div class="about-image"> 
+			<img src="my logo.png" alt="About Image"> 
+		</div> 
+	</section> 
+	<section id="Projects" class="Project">
+		<div class="container">
+			<h2 class="section-title">My Projects</h2>
+			
+			<div class="project-item">
+				<div class="project-details">
+					<h3>Smart Grocery Management System</h3>
+					<p>The Smart Grocery Management System is a web-based application designed to streamline the process of managing grocery stores. It includes features such as inventory management, order processing, customer management, and analytics.</p>
+					<p>This project aims to simplify the tasks involved in running a grocery store by providing an efficient and user-friendly platform for store owners and employees.</p>
+				</div>
+				<!-- Add an image for your project if desired -->
+				<div class="project-image">
+					<img src="image copy 4.png" alt="Project Image">
+				</div>
+			</div>
+	</section>
+	
+
+	<section id="contact" class="contact-section">
+		<div class="container">
+			<h2 class="contact-heading"></h2>
+			
+			<!-- Form Section -->
+			<div class="contact-form">
+				<h3>Send Me a Message</h3>
+				<h5> This page is not Working right now Drop Your message on the given Email <Address></Address></h5>
+				<form action="send_email.php" method="post">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+				
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+				
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+				
+					<input type="submit" value="Send Message">
+				</form>
+				
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-menu">
+				<ul class="footer-menu-list">
+					<li><a href="#home" class="footer-links">Home</a></li>
+					<li><a href="#about" class="footer-links">About</a></li>
+					<li><a href="#Projects" class="footer-links">Projects</a></li>
+					<li><a href="#contact" class="footer-links">Contact</a></li>
+				</ul>
+			</div>
+			<div class="social-links">
+				<a href="https://x.com/S434578490?t=v2v63QI8Gqc_Ppq_XLMv-g&s=09" class="footer-list-items" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="https://facebook.com" class="footer-list-items" target="_blank">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="footer-list-items" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+			</div>
+			<div class="contact-info">
+				<p>Email: <a href="mailto:tiwarivishwash.in124@gmail.com">tiwarivishwash.in124@gmail.com</a></p>
+				<p>Phone: <a href="tel:9004125067">9004125067</a></p>
+				<p>Address: Virar West, Global City, Mumbai Maharashtra</p>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Remaining HTML content -->
+	
+	<!-- Font Awesome for social icons -->
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	
+	</body>
+	</html>
+	
+</body> 
+
+</html>

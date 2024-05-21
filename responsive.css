@@ -1,0 +1,1164 @@
+/* Styles defined for the desktop or the bigger screen devices*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+} 
+
+/* Header Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(90deg, #3489c6, #b4f4ff, #35A99C);
+    background-color: transparent;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    z-index: 1000; /* Ensure the navbar stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    padding: 1rem 2rem;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Add a slight background color on hover */
+}
+
+.logo {
+    padding: 0 2rem; /* Reduce padding for smaller screens */
+    transition: padding 0.3s ease; /* Smooth transition for padding */
+}
+
+.menu {
+    padding: 0 2rem; /* Reduce padding for smaller screens */
+    transition: padding 0.3s ease; /* Smooth transition for padding */
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer; /* Add cursor pointer for better UX */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.hamburger:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+.cross-icon {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.cross-icon:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.menu-list .menu-list-items {
+    padding: 0.5rem 1rem;
+    transition: padding 0.3s ease; /* Smooth transition for padding */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 856px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .logo {
+        padding: 0 1rem;
+    }
+
+    .menu {
+        padding: 0 1rem;
+        width: 100%;
+        display: none; /* Initially hide the menu */
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cross-icon {
+        display: block;
+    }
+
+    .menu .menu-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-list .menu-list-items {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .navbar:hover {
+        background-color: transparent; /* Keep background transparent on hover in mobile view */
+    }
+}
+
+/* Adjust padding for medium screens */
+@media screen and (min-width: 856px) and (max-width: 1024px) {
+    .menu-list .menu-list-items {
+        padding: 0.5rem 0.3rem;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+} 
+
+/* Main Hero Section Styles */
+.hero {
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yODMtYWRqLTAxM18yLmpwZw.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 4.8rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero .intro {
+    text-align: center;
+    margin: 2rem;
+    color: #010101; /* Adjust text color for better visibility */
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.hero .intro-buttons {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: slideInFromBottom 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 0;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .hero .intro {
+        margin: 1rem 0;
+        padding: 0 1rem;
+        font-size: 1.2rem;
+    }
+
+    .hero .intro-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .intro-buttons .btn {
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+} 
+
+/* About section styles */
+.about { 
+    display: flex; 
+    align-items: center; 
+    background-image: linear-gradient(45deg, #fbfbfb, #8cdde6); 
+    justify-content: space-between; 
+    width: 100%; 
+} 
+
+.about .about-text { 
+    width: 450px; 
+    color: #000000; 
+    padding: 5rem 1rem 5rem 5rem; 
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.about .about-text:hover { 
+    color: #f8ff3b; /* Changes text color on hover */
+    transform: translateY(-10px); /* Moves text upward slightly on hover */
+}
+
+.about .about-image img { 
+    height: 350px; 
+    width: 350px; 
+    padding: 4rem; 
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    transition: transform 0.4s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+}
+
+.about .about-image img:hover { 
+    transform: scale(1.5); /* Scales the image up slightly on hover */
+    box-shadow: 0 12px 20px rgba(24, 126, 210, 0.3); /* Adds a shadow on hover */
+}
+
+/* Portfolio section styles */
+.portfolio { 
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+} 
+
+.port-card { 
+    padding: 0 !important; 
+    background: none !important; 
+    border: 2px solid #000; 
+} 
+
+.port-card .image { 
+    width: 100%; 
+} 
+
+.port-card .image img { 
+    height: 200px; 
+    width: 100%; 
+    border-top-right-radius: 20px; 
+    border-top-left-radius: 20px; 
+} 
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .about .about-text {
+        width: 100%;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .about .about-image img {
+        height: 250px;
+        width: 250px;
+        padding: 2rem;
+    }
+
+    .portfolio {
+        margin: 2.4rem 0;
+        padding: 0 1rem;
+    }
+
+    .port-card .image img {
+        height: 150px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+} 
+
+/* Contact section styles */
+.contact { 
+    padding: 0 5rem; 
+} 
+
+.contact-content { 
+    display: flex; 
+    margin: 3rem 0; 
+    justify-content: space-between; 
+} 
+
+.contact-form-container { 
+    width: 50%; 
+} 
+
+.contact-form { 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+.contact-form .form-controls { 
+    width: 80%; 
+    padding: 10px 0; 
+    margin: 1.67rem 0; 
+} 
+
+.contact-form .form-btn { 
+    width: 83%; 
+} 
+
+.contact-details { 
+    width: 50%; 
+} 
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-menu {
+    margin-bottom: 2rem;
+}
+
+.footer-menu-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu-list li {
+    margin: 0 1rem;
+}
+
+.footer-links {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links:hover {
+    color: #53C8B6;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.footer-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    background-color: #53C8B6;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-list-items:hover {
+    background-color: #35A99C;
+    transform: scale(1.1);
+}
+
+.footer-list-items i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #53C8B6;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 0 1rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-container,
+    .contact-details {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contact-form .form-controls {
+        width: 100%;
+    }
+
+    .contact-form .form-btn {
+        width: 100%;
+    }
+
+    .footer-menu-list {
+        flex-direction: column;
+    }
+
+    .footer-menu-list li {
+        margin: 0.5rem 0;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .footer-list-items {
+        margin: 0.5rem 0;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+} 
+
+/* Contact section styles */
+.contact { 
+    padding: 0 5rem; 
+} 
+
+.contact-content { 
+    display: flex; 
+    margin: 3rem 0; 
+    justify-content: space-between; 
+} 
+
+.contact-form-container { 
+    width: 50%; 
+} 
+
+.contact-form { 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+.contact-form .form-controls { 
+    width: 80%; 
+    padding: 10px 0; 
+    margin: 1.67rem 0; 
+} 
+
+.contact-form .form-btn { 
+    width: 83%; 
+} 
+
+.contact-details { 
+    width: 50%; 
+} 
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-menu {
+    margin-bottom: 2rem;
+}
+
+.footer-menu-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu-list li {
+    margin: 0 1rem;
+}
+
+.footer-links {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links:hover {
+    color: #53C8B6;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.footer-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    background-color: #53C8B6;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-list-items:hover {
+    background-color: #35A99C;
+    transform: scale(1.1);
+}
+
+.footer-list-items i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #53C8B6;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Utility classes */
+.greet-heading {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #000000;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.my-heading {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #000000;
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.sub-heading {
+    margin: 0;
+    font-size: 1.0rem;
+    color: #080808;
+    font-weight: lighter;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.links {
+    border-bottom: 2px solid transparent;
+    padding: 5px;
+    text-decoration: none;
+    color: #050505;
+    position: relative;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.links::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #050505;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.links:hover {
+    color: #e6ecec; /* Change to your desired hover color */
+}
+
+.links:hover::before {
+    transform: scaleX(1);
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+    text-decoration: none; /* Remove default text decoration */
+    display: inline-block; /* Make buttons inline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+/* Common Button Styles */
+.common-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.common-btn:hover {
+    background-color: #333; /* Darken background color on hover */
+}
+
+/* Ghost Button Styles */
+.ghost-btn {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000; /* Add border */
+}
+
+.ghost-btn:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000; /* Change border color on hover */
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive styles for small screens */
+@media screen and (min-width: 280px) and (max-width: 576px) {
+    .contact {
+        padding: 0 1rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-container,
+    .contact-details {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contact-form .form-controls {
+        width: 100%;
+    }
+
+    .contact-form .form-btn {
+        width: 100%;
+    }
+
+    .footer-container {
+        padding: 1rem;
+    }
+
+    .footer-menu {
+        padding: 0 1rem;
+    }
+
+    .footer-menu-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .greet-heading {
+        font-size: 1rem;
+    }
+
+    .my-heading {
+        font-size: 1.8rem;
+    }
+
+    .sub-heading {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .links {
+        font-size: 0.9rem;
+    }
+
+    .footer-list-items {
+        margin: 0.5rem 0;
+    }
+}
+/* css on the pro*/
+/* General Styles */
+/* General Styles */
+.heading-span { 
+    font-weight: bolder; 
+} 
+
+.text-center { 
+    text-align: center; 
+} 
+
+.small-para { 
+    font-size: 12px; 
+    color: #fff; 
+} 
+
+.white-text { 
+    color: #fff; 
+} 
+
+.blue-text { 
+    color: #363D73; 
+}
+
+/* Skills Section */
+.skills {
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the section */
+    border-radius: 12px; /* Rounded corners for a modern look */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px; /* Padding to ensure content does not touch edges on small screens */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #00796b; /* Dark teal color */
+    text-transform: uppercase; /* Uppercase text for the section title */
+    letter-spacing: 2px; /* Increased letter spacing */
+}
+
+.skill {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for skill item */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.skill:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.skill-name {
+    font-size: 24px;
+    color: #698985; /* Dark teal color */
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold font for skill name */
+}
+
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure skill level stays within rounded corners */
+    position: relative;
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(90deg, #3672d3, #628ddb); /* Gradient color for skill level */
+    border-radius: 10px 0 0 10px; /* Rounded corners for the filled part */
+    transition: width 1s ease-in-out; /* Smooth animation for skill level fill */
+    position: relative;
+}
+
+.skill-level::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Highlight effect on the right edge */
+    border-radius: 0 10px 10px 0; /* Rounded corners */
+}
+
+.skill-description {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+    text-align: right; /* Align description to the right */
+}
+
+/* Animation for skill bars */
+@keyframes skillFill {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--skill-level);
+    }
+}
+
+.skill-level {
+    animation: skillFill 2s ease-in-out;
+}
+
+/* Add these media queries at the end of your existing CSS */
+
+/* For screens smaller than 768px (tablets and mobile phones) */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Hide the menu by default on smaller screens */
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon */
+    }
+
+    .menu.active {
+        display: block; /* Show the menu when active */
+    }
+
+    .menu-list {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center menu items */
+    }
+
+    .menu-list-items {
+        margin-bottom: 20px; /* Add space between menu items */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack logo and hamburger icon vertically */
+        align-items: center; /* Center logo and hamburger icon */
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Add space below the logo */
+    }
+
+    .logo-heading {
+        font-size: 24px; /* Reduce font size of the logo */
+    }
+
+    .footer-menu {
+        margin-top: 20px; /* Add space between footer menu and social links */
+    }
+
+    .footer-menu-list {
+        justify-content: center; /* Center social icons */
+    }
+}
+
+/* For screens smaller than 480px (small mobile phones) */
+@media screen and (max-width: 480px) {
+    .my-heading {
+        font-size: 24px; /* Reduce font size of the main heading */
+    }
+
+    .sub-heading {
+        font-size: 16px; /* Reduce font size of the sub-heading */
+    }
+
+    .intro-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+
+    .about {
+        flex-direction: column; /* Stack about sections vertically */
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%; /* Make about sections full width */
+    }
+
+    .footer-menu {
+        margin-top: 10px; /* Reduce space between footer menu and social links */
+    }
+}
+.education-section {
+    padding: 2rem;
+    background-color: #e0f7fa; /* Light cyan background */
+    border-radius: 12px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the section */
+}
+
+.education-section h2 {
+    font-size: 2.5rem;
+    color: #00796b; /* Dark teal color */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase; /* Uppercase text for the section title */
+    letter-spacing: 2px; /* Increased letter spacing */
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(to right, #91c4ea, #a4abe4); /* Gradient background */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-10px); /* Increased transform for more lift */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.education-item h3 {
+    font-size: 1.8rem;
+    color: #4e342e; /* Dark brown color */
+    margin-bottom: 0.5rem;
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: #3e2723; /* Slightly darker brown for text */
+    margin: 0.3rem 0;
+}
+
+/* Additional styles for more visual enhancement */
+.education-item h3::before {
+    content: '🎓'; /* Adding a graduation cap icon before each degree */
+    margin-right: 0.5rem;
+}
+
+.education-item p::before {
+    content: '📅'; /* Adding a calendar icon before each date */
+    margin-right: 0.3rem;
+}
+/* Contact Section */
+/* Styling for the contact section */
+.contact-form {
+    margin-top: 40px; /* Adjust margin as needed */
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Set heading color */
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #666; /* Set label color */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.contact-form input[type="submit"] {
+    background-color: #5893e0;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #3a77d0; /* Darker shade on hover */
+}
+
+/* Animation for form elements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-form h3,
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form input[type="submit"] {
+    animation: fadeInUp 1s ease-out; /* Apply fadeInUp animation */
+}
+.projects-section {
+    padding: 80px 0; /* Adjust padding as needed */
+    background-color: #f8f9fa; /* Set background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #00796b; /* Set title color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-out; /* Add fadeInDown animation */
+}
+
+.project-item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.project-details {
+    flex: 1;
+    padding-right: 20px;
+    animation: slideInLeft 1s ease-out; /* Add slideInLeft animation */
+}
+
+.project-details h3 {
+    font-size: 24px;
+    color: #4e342e; /* Set project title color */
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #3e2723; /* Set project description color */
+    margin-bottom: 10px;
+}
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
